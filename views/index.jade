@@ -1,5 +1,16 @@
 extends layout
+
 block content
-  h1= title
-  p.
-    yo yo yo!
+  script(src='https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.11.7')
+  script(language="Javascript" src="http://www.locationbox.com.tr/locationbox/services?Key=1030000208000152005400080906040X50421090080050200008069&Cmd=API&Typ=JS")
+  
+  table(height="100%" width="100%")
+    tr
+      td#menu(align="left")
+        .logo
+          h1 TF + LocationBox
+        #options
+          button(onclick="putMarker()") Put Marker
+          button(onclick="predict()") Predict 
+      td
+        #map
