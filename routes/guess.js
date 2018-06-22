@@ -2,7 +2,11 @@ var express = require("express");
 var router = express.Router();
 
 /* GET guess API. */
-router.get("/:round", function (req, res, next) {
+router.get("/:lat/:long", function (req, res, next) {
+
+	longitude = req.params.long;
+	latitude = req.params.lat;
+
 
 	res.send();
 

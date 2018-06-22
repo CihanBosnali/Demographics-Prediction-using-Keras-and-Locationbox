@@ -11,7 +11,10 @@
     "morgan": "^1.9.0",
     "serve-favicon": "^2.5.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "request": "^2.87.0",
+    "retry-request": "^4.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
